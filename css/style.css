@@ -1,0 +1,623 @@
+@font-face { 
+    font-family: "Open Sans"; 
+    src: local("Open Sans normal"), 
+        local("Open-Sans-normal"), 
+        url("../fonts/opensans.woff2") format("woff2"), 
+        url("../fonts/opensans.woff") format("woff"); 
+    font-weight: 400; 
+    font-style: normal;  
+}
+
+.visually-hidden:not(:focus):not(:active), 
+input[type="checkbox"].visually-hidden, 
+input[type="radio"].visually-hidden { 
+    position: absolute; 
+
+    width: 1px; 
+    height: 1px; 
+    margin: -1px; 
+    border: 0; 
+    padding: 0; 
+
+    white-space: nowrap; 
+
+    -webkit-clip-path: inset(100%); 
+    clip-path: inset(100%); 
+    clip: rect(0 0 0 0); 
+    overflow: hidden; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    
+    color: #000000;
+    background-color: #ffffff;
+    
+    width: 320px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(../img/background_banner.jpg);
+    background-repeat: no-repeat;
+}
+
+.container {
+    margin: 0;    
+    padding: 0 16px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.header-top-caption { 
+    padding-top: 72px;
+    margin-bottom: 18px;
+    font-weight: normal;
+}
+
+.header-bottom-caption {
+    margin-bottom: 21px;
+    
+    letter-spacing: 1px;
+}
+
+.header-advantages-list {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;    
+    
+    font-size: 18px;
+    line-height: 24px;
+    
+    margin-bottom: 35px;
+}
+
+.header-advantages-item {
+    position: relative;
+    
+    margin-left: 25px;
+    margin-bottom: 4px;
+    
+    opacity: 0.84;
+}
+
+.header-advantages-item::before {
+    content: "";
+    
+    position: absolute;
+    
+    top: 8px;
+    left: -25px;
+    
+    width: 8px;
+    height: 8px;
+    
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+header p {
+    font-size: 20px;
+    line-height: 30px;
+    
+    opacity: 0.84;
+    
+    margin-bottom: 41px;
+}
+
+.button {
+    position: relative;
+    
+    width: 287px;
+    height: 72px;
+    
+    color: #ffffff;
+    font-size: 20px;
+    
+    background-color: #3581d5;
+    border: none;
+    border-radius: 5px;
+    
+    padding-left: 40px;
+    
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #1962b2;
+}
+
+.button-windows {
+    margin-bottom: 32px;
+}
+
+.button-windows::before {
+    content: url(../img/Windows_logo.png);
+    
+    position: absolute;
+    top: 24px;
+    left: 87px;
+}
+
+.button-apple::before {
+    content: url(../img/mac_%20logo_grey.png);
+    
+    position: absolute;
+    top: 20px;
+    left: 87px;
+}
+
+.header-button-apple {
+    margin-bottom: 60px;
+}
+
+h2 {
+    margin-top: 71px;
+    margin-bottom: 17px;
+    margin-right: -5px;
+    
+    letter-spacing: 1.05px;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+}
+
+main p {
+    margin: 0;
+    line-height: 26px;
+    
+    opacity: 0.84;
+}
+
+.main-button-windows {
+    margin-top: 42px;
+}
+
+.main-button-apple {
+    margin-bottom: 35px;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.8px;
+    
+    margin-top: 37px;
+    margin-bottom: 24px;
+}
+
+h4 span {
+    color: #f68263;
+}
+
+main img {
+    margin-bottom: 14px;
+}
+
+main strong {
+    letter-spacing: 0.6px;
+}
+
+.main-create-slideshow {
+    margin-top: 33px;
+}
+
+.slide-controls {
+    width: 320px;
+    
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    position: relative;
+}
+
+.slide-radio-mode-button {
+    position: relative;
+    
+    background-color: rgb(224, 224, 224, 0.3);
+    color: rgb(0, 0, 0, 0.5);
+    
+    width: 122px;
+    letter-spacing: 0.3px;
+    
+    text-align: center;
+    font-size: 16px;
+    
+    cursor: pointer;
+}
+
+.slide-radio-mode-button-1 {
+    border-top-right-radius: 4px;
+    padding: 22px 15px 22px;
+}
+
+.slide-radio-mode-button-2 {
+    border-top-left-radius: 4px;
+    padding: 14px 15px 14px;
+}
+
+.slideshow-mode {
+    background-color: #eeeeee;
+}
+
+.slideshow-mode h4 {
+    letter-spacing: 0.5px;
+}
+
+.slideshow-mode h4:first-child {
+    margin: 0;
+    padding-top: 40px;
+    margin-bottom: 30px;
+}
+
+.slideshow-mode-last {
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding-bottom: 113px;
+}
+
+.link-return {
+    position: relative;
+    
+    bottom: 64px;
+    
+    left: 83px;
+    
+    color: #3581d5;
+    text-decoration: none;
+}
+
+.link-return::after {
+    content: url(../img/shevron_top.png);
+    
+    position: absolute;
+    
+    top: -1px;
+    left: -38px;
+}
+
+.link-return::before {
+    content: "";
+    
+    position: absolute;
+    
+    top: -6px;
+    left: -43px;
+    
+    width: 30px;
+    height: 30px;
+    
+    background-color: #3581d5;
+    border-radius: 50%;
+}
+
+.link-return:hover {
+    opacity: 0.8;
+}
+
+.link-return:active {
+    opacity: 0.5;
+}
+
+.slideshow-mode {
+    display: none;
+}
+
+.radio-mode-1:checked ~ .slideshow-easy-mode {
+    display: inherit;
+}
+
+.radio-mode-2:checked ~ .slideshow-full-feature-mode {
+    display: inherit;
+}
+
+.radio-mode-1:checked ~ .slide-controls .slide-radio-mode-button-1::before {
+    content: "Easy Mode";
+    
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    
+    width: 160px;
+    
+    background-color: #eeeeee;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-top-right-radius: 4px;
+    padding: 22px 0 28px;
+    
+    font-weight: bold;
+    
+    z-index: 2;
+}
+
+.radio-mode-2:checked ~ .slide-controls .slide-radio-mode-button-2::before {
+    content: "Full Feature Mode";
+    
+    position: absolute;
+    
+    top: 0;
+    right: 0;
+    
+    width: 130px;
+    
+    background-color: #eeeeee;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-top-left-radius: 4px;
+    padding: 16px 15px;
+    
+    font-weight: bold;
+    
+    z-index: 2;
+}
+
+.main-save-clip {
+    margin: 0;
+    padding: 0;
+    
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.main-maker {
+    background: linear-gradient(to right, rgb(225,255,250), rgb(221,255,228));
+}
+
+.main-maker h2 {
+    margin: 0;
+    padding: 0;
+    
+    padding-top: 72px;
+    margin-top: 53px;
+    margin-bottom: 24px;
+}
+
+.main-maker img {
+    margin: 0;
+    margin-left: 53px;
+    margin-bottom: 40px;
+}
+
+.main-maker p {
+    line-height: 22px;
+    margin-bottom: 34px;
+}
+
+.main-maker-list {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+    
+    margin-left: 50px;
+    margin-bottom: 47px;
+}
+
+.main-maker-item {
+    position: relative;
+    
+    margin-top: 26px;
+    
+    line-height: 22px;
+}
+
+.main-maker-item-image::before {
+    content: url(../img/icon_1_pictures.png);
+    
+    position: absolute;
+    
+    top: -3px;
+    left: -50px;
+}
+
+.main-maker-item-video::before {
+    content: url(../img/icon_2_film.png);
+    
+    position: absolute;
+    
+    top: -3px;
+    left: -50px;
+}
+
+.main-maker-item-text::before {
+    content: url(../img/icon_text.png);
+    
+    position: absolute;
+    
+    top: -5px;
+    left: -44px;
+}
+
+.main-maker-item-diamond::before {
+    content: url(../img/icon_4_diamond-outlined-shape.png);
+    
+    position: absolute;
+    
+    top: -3px;
+    left: -49px;
+}
+
+.main-button-windows-bottom,
+.main-button-apple-bottom {
+    margin-bottom: 12px;
+}
+
+.main-maker-container {
+    padding-bottom: 32px;
+    
+    text-align: center;
+}
+
+.main-maker-container:last-child {
+    padding-bottom: 57px;
+}
+
+.main-maker-link {
+    color: #3581d5;
+    font-size: 14px;
+    
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+}
+
+.main-maker-link:hover {
+    color: #1962b2;
+    
+    border-bottom: 1px solid #1962b2;
+}
+
+.main-maker-link::after {
+    content: url(../img/shevron_right.png);
+    
+    margin-left: 5px;
+}
+
+.main-maker-link:hover:after {
+    content: url(../img/shevron_right_active.png);
+    
+    margin-left: 5px;
+}
+
+.footer-guides {
+    background-color: #eeeeee;
+}
+
+footer h2 {
+    margin: 0;
+    padding: 0;
+    
+    padding-top: 70px;
+    margin-bottom: 32px;
+    
+    letter-spacing: 0.44px;
+}
+
+.footer-guides-list {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+    
+    margin-top: -7px;
+    margin-left: 1px;
+}
+
+.footer-guides-item {
+    display: table;
+    
+    margin-top: 32px;
+}
+
+.footer-guides-item:last-child {
+    padding-bottom: 60px;
+}
+
+.footer-guides-item-link {
+    display: table-cell;
+    
+    vertical-align: middle;
+    
+    width: 235px;
+    height: 68px;
+    
+    padding: 0 24px;
+    color: rgb(0, 0, 0, 0.84);
+    text-decoration: none;
+    line-height: 26px;
+    
+    border: 2px dashed #bdbdbd;
+    border-radius: 4px;
+}
+
+.footer-guides-item-link:hover {
+    color: rgb(0, 0, 0, 1);
+    
+    background-color: #b4d1f2;
+    border: 2px solid #b4d1f2;
+}
+
+.footer-support-list {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+}
+
+.footer-support-item {
+    display: table;
+    
+    margin-top: 32px;
+}
+
+.footer-support-item:last-child {
+    margin-bottom: 60px;
+}
+
+.footer-support-item-link {
+    position: relative;
+    
+    display: table-cell;
+    
+    font-size: 18px;
+    line-height: 28px;
+    vertical-align: middle;
+    color: #3581d5;
+    padding-left: 135px;
+        
+    width: 288px;
+    height: 132px;
+    background-color: #e3f0ff;
+    border-radius: 4px;
+    
+    text-decoration: none;
+}
+
+.footer-support-item-link-visit::before {
+    content: url(../img/support-icon.png);
+    
+    position: absolute;
+    
+    top: 16px;
+    left: 16px;
+}
+
+.footer-support-item-link-watch::before {
+    content: url(../img/guide-icon.png);
+    
+    position: absolute;
+    
+    top: 16px;
+    left: 16px;
+}
+
+.footer-support-item-link:hover {
+    color: #003269;
+}
+
+.footer-support-item-link-visit:hover:before {
+    content: url(../img/support-icon-hover.png);
+}
+
+.footer-support-item-link-watch:hover:before {
+    content: url(../img/guide-icon-hover.png);
+}
