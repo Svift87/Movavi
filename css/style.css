@@ -274,12 +274,16 @@ main strong {
     padding-bottom: 113px;
 }
 
+.link-return-contaier {
+    margin-left: 45px;
+    
+    text-align: center;
+}
+
 .link-return {
     position: relative;
     
     bottom: 64px;
-    
-    left: 83px;
     
     color: #3581d5;
     text-decoration: none;
@@ -311,10 +315,6 @@ main strong {
 
 .link-return:hover {
     opacity: 0.8;
-}
-
-.link-return:active {
-    opacity: 0.5;
 }
 
 .slideshow-mode {
@@ -621,3 +621,87 @@ footer h2 {
 .footer-support-item-link-watch:hover:before {
     content: url(../img/guide-icon-hover.png);
 }
+
+@media (min-width: 768px) {
+    body {
+        width: 768px;
+    }
+    
+    .container {   
+        padding: 0 24px;
+    }
+    
+    header {
+        background-image: url(../img/background_banner-768px.jpg);
+        position: relative;
+    }
+    
+    header::before {
+        content: url(../img/icon-header.png);
+        
+        position: absolute;
+        
+        top: 80px;
+        right: 24px;
+    }
+    
+    .header-top-caption { 
+        padding-top: 71px;
+        margin-bottom: 8px;
+    }
+
+    .header-bottom-caption {
+        margin-bottom: 26px;
+    }
+
+    h3 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    
+    .header-advantages-list {
+        margin-bottom: 41px;
+    }
+
+    header p {
+        line-height: 26px;
+        
+        margin-bottom: 47px;
+    }
+
+    .button {
+        width: 344px;
+    }
+    
+    .button-windows::before {
+        left: 115px;
+    }
+
+    .button-apple::before {
+        left: 115px;
+    }
+
+    .button-windows {
+        margin-right: 28px;
+        margin-bottom: 60px;
+    }
+
+    .header-button-apple,
+    .main-button-apple {
+        margin-bottom: 0;
+        margin-right: -2px;
+    }
+    
+    .main-button-windows {
+        margin-right: 28px;
+        margin-bottom: 35px;
+    }
+    
+    h4 {
+        margin-left: 21px;
+    }
+    
+    
+    
+}
+
